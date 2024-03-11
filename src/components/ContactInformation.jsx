@@ -3,7 +3,7 @@ import InputMask from "react-input-mask";
 import Select from "react-select";
 import PropTypes from "prop-types";
 
-import { checkEmailAvailability, getCountryOptions } from "./utils";
+import { checkEmailAvailability, getCountryOptions, customStyles } from "./utils";
 
 const ContactInformation = ({ formData, setFormData }) => {
   const [emailError, setEmailError] = useState("");
@@ -41,20 +41,6 @@ const ContactInformation = ({ formData, setFormData }) => {
   };
   const handleCountryChange = (selectedOption) => {
     setFormData({ ...formData, country: selectedOption ? selectedOption.value : null });
-  };
-  const customStyles = {
-    option: (defaultStyles, state) => ({
-      ...defaultStyles,
-      color: state.isSelected ? "#212529" : "#black",
-      fontSize: "12px",
-      textAlign: "left",
-    }),
-    control: (defaultStyles) => ({
-      ...defaultStyles,
-      fontSize: "14px",
-      textAlign: "left",
-    }),
-    singleValue: (defaultStyles) => ({ ...defaultStyles }),
   };
 
   const handleAddressChange = (e) => {

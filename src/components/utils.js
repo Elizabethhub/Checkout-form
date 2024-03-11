@@ -18,3 +18,18 @@ export const getCountryOptions = () => {
   }));
   return countryOptions;
 };
+
+export const customStyles = {
+  option: (defaultStyles, state) => ({
+    ...defaultStyles,
+    color: state.isSelected ? "#212529" : "#black",
+    fontSize: "12px",
+    textAlign: "left",
+  }),
+  control: (defaultStyles) => ({
+    ...defaultStyles,
+    fontSize: "14px",
+    textAlign: "left",
+  }),
+  singleValue: (defaultStyles) => ({ ...defaultStyles }),
+};
