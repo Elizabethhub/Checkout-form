@@ -1,0 +1,47 @@
+.checkout-form-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+.required {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.required > span {
+  margin-right: 5px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.row input {
+  flex: 1;
+  margin-right: 10px;
+}
