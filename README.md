@@ -51,19 +51,19 @@ npm start
 
 ## File Structure
 
-├── src/
-│ ├── components/
-│ │ ├── CheckoutForm.js
-│ │ ├── ContactInformation.js
-│ │ ├── PaymentDetails.js
-│ │ ├── PersonalInformation.js
-│ │ ├── PersonalInformationStyles.js
-│ ├── utils/
-│ │ └── countries-list.js
-│ ├── App.css
-│ ├── App.js
-│ ├── index.css
-│ ├── index.js
+- ├── src/
+- │ ├── components/
+- │ │ ├── CheckoutForm.js
+- │ │ ├── ContactInformation.js
+- │ │ ├── PaymentDetails.js
+- │ │ ├── PersonalInformation.js
+- │ │ ├── PersonalInformationStyles.js
+- │ ├── utils/
+- │ │ └── countries-list.js
+- │ ├── App.css
+- │ ├── App.js
+- │ ├── index.css
+- │ ├── index.js
 
 - `CheckoutForm.js`: Main component for the checkout form.
 - `ContactInformation.js`: Component for collecting contact information.
